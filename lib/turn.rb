@@ -21,7 +21,7 @@ def display_board(board_array)
 end
 
 def input_to_index(input)
-  binding 'pry'
+  binding.pry
   # user_input = input.to_i - 1
 end
 
