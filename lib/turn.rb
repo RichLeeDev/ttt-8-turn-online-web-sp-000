@@ -22,7 +22,7 @@ end
 
 def input_to_index(input)
   binding.pry
-  # input.to_i -= 1
+  # input = input.to_-i - 1
 end
 
 def position_taken?(array, index)
