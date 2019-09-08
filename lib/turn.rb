@@ -1,4 +1,4 @@
-require 'pry'
+
 def move(board_array,user_input1,character = "X")
   board_array[user_input1] = character
   return board_array
@@ -21,8 +21,7 @@ def display_board(board_array)
 end
 
 def input_to_index(input)
-  binding.pry
-  # user_input = input.to_i + 1
+  user_input = input.to_i - 1
 end
 
 def position_taken?(array, index)
