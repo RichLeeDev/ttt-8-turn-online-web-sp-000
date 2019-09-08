@@ -19,6 +19,10 @@ def display_board(board_array)
   puts " #{board_array[6]} | #{board_array[7]} | #{board_array[8]} "
 end
 
+def input_to_index(board,input)
+  user_input = input.to_i - 1
+end
+
 def position_taken?(array, index)
   
    if array[index] == 'X' || array[index] == 'O'
@@ -34,7 +38,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   
-  user_input = input.to_i - 1 
+  input_to_index(board,input)
   
   if valid_move?(board,user_input) == true
     move(board,user_input,character = 'X')
