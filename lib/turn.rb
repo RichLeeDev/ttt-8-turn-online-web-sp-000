@@ -5,7 +5,7 @@ def move(board_array,user_input1,character = "X")
 end
 
 def valid_move?(board, index)
-if index.between?(-1,8) && position_taken?(board, index) == false
+if index.between?(0,8) && position_taken?(board, index) == false
  return true
 else
  return false
@@ -39,7 +39,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   input_to_index(input)
-  if valid_move?(board,input) == true  &&  position_taken?(board,input) == false
+  if valid_move?(board,input) == true
     move(board,input,character = 'X')
   else
     puts "Please enter 1-9:"
